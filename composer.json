@@ -1,0 +1,44 @@
+{
+    "name": "ionutgrecu/translation-manager",
+    "description": "Manage Laravel Translations",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "Ionut Grecu",
+            "email": "ionut.grecu.eu@gmail.com",
+            "illuminate/translation": "^5.5|^6|^7|^8",
+            "symfony/finder": "^3|^4|^5"
+        }
+    ],
+    "require": {
+        "php": ">=7",
+        "illuminate/support": "^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ionutgrecu\\TranslationManager\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ionutgrecu\\TranslationManager\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ionutgrecu\\TranslationManager\\TranslationManagerServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0"
+    }
+}
